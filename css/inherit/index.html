@@ -1,0 +1,32 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /*
+        use "inhert" to overwrite the default user-agent style like below:
+        
+        // user agent stylesheet
+        a:-webkit-any-link {
+            color: -webkit-link;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    */
+    #toolbar {
+        background: blue;
+        color: white;
+    }
+
+    #toolbar a {
+        color: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="toolbar">
+      <a href="#">One</a> |
+      <a href="#">Two</a>
+  </div>
+</body>
+</html>

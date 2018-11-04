@@ -1,0 +1,28 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /* just used for "block-level" element, */
+    p:first-child::first-letter {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    p:last-child::first-line {
+        color: red;
+    }
+    body::before {
+        content: '[START]';
+        color: green;
+    }
+    body::after {
+        content: '[END]';
+        color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <p>This is the first paragraph!</p>
+  <p>This is the first paragraph!</p>
+</body>
+</html>

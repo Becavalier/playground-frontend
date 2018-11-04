@@ -1,0 +1,33 @@
+<html>
+<head>
+  <style>
+    #container > .tag {
+        color: red;
+    }
+
+    #container > .tag + span {
+        border: solid 5px black;
+    }
+
+    #container li + li {
+        color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p class="tag">Apple</p>
+    <p class="tag">Orange</p>
+    <span>Separator</span>
+    <div>
+      <p class="tag">Peach</p>
+    </div>
+    <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+      <li>List 3</li>
+    </ul>
+  </div>
+</body>
+</html>

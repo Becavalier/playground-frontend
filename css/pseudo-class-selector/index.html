@@ -1,0 +1,52 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /*
+        ":link" and ":visited" are independent, no selector like "a:link:visited".
+    */
+    a {
+        color: blue;
+    }
+    a:link {
+        color: red;
+    }
+    a:link:hover {
+        border: solid 5px black;
+        font-size: 20px;
+    }
+    a:link:hover:lang(en) {
+        border: solid 20px red;
+    }
+    a:visited {
+        color: purple;
+    }
+    a:visited:hover {
+        /* 
+            here only support "color" changes due to privacy policy, FYI: 
+            https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector 
+        */
+        border-color: green;
+    }
+    a:visited:hover:active {
+        border-color: blue;
+    }
+    li:last-child {
+        color: rebeccapurple;
+    }
+    li:first-child {
+        color: palevioletred;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="https://www.yhspy.com/">YHSPY</a>
+  <a href="https://www.yhspy.com/" lang="en">YHSPY</a>
+  <a name="tag">YHSPY</a>
+  <ul>
+      <li>List 1</li>
+      <li>List 2</li>
+  </ul>
+</body>
+</html>

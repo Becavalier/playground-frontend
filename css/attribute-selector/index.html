@@ -1,0 +1,41 @@
+<html>
+<head>
+  <style>
+    body div[data-id="fruit"] p[type="apple"][order="A"] {
+        color: red;
+    }
+
+    body div[data-id="vegetable"] p[show] {
+        color: green;
+    }
+    /* for using "word list" as an attribute value */
+    body [feature~="cool"] {
+        color: blue;
+        font-weight: bold;
+    }
+    
+    /* [selector]-/[selector] */
+    body div[seq|="img"] {
+        border: solid 5px red;
+    }
+  </style>
+</head>
+
+<body>
+  <div data-id="fruit">
+    <p type="apple" order="A">Apple</p>
+    <p type="orange" order="B">Orange</p>
+  </div>
+  <div data-id="vegetable">
+    <p show="show">Lettuce</p>
+    <p show="show">Onion</p>
+    <p>scallion</p>
+  </div>
+  <div>
+    <p feature="cool hot">Cool/Hot</p>
+    <p feature="cool">Cool</p>
+    <p feature="hot">Hot</p>
+  </div>
+  <div seq="img-1">Image</div>
+</body>
+</html>

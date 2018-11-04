@@ -1,0 +1,38 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /*
+        Five CSS font series:
+
+        serif: 衬线体（等比例、有上下短线）;
+        sans-serif: 无衬线体（等比例、无上下短线）;
+        monospace: 单间隔体（等宽）;
+        cursive: 草体（仿手写体）;
+        fantasy: 其他;
+
+        "{{ font-name }}"
+    */
+    #container {
+        font-family: sans-serif;
+    }
+
+    #container p:nth-child(1) {
+        font-family: "微软雅黑", sans-serif;
+    }
+
+    #container .code {
+        font-family: monospace;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>There are some words here.</p>
+    <pre class="code">
+        int add (int x, int y);
+    </pre>
+  </div>
+</body>
+</html>

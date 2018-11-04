@@ -1,0 +1,50 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /*
+        default: 
+        
+        1em := 0.5ex;
+        72pt := 1in; (dpi);
+        96px := 1in (ppi);
+    */
+    #container {
+        font-size: 12px;
+    }
+    #container span:nth-child(1) {
+        font-size: 5px;
+    }
+    #container span:nth-child(2) {
+        font-size: 5em;
+    }
+    #container span:nth-child(3) {
+        font-size: 5ex;
+    }
+    #container span:nth-child(4) {
+        font-size: 1in;
+    }
+    #container span:nth-child(5) {
+        font-size: 72pt;
+    }
+    #container span:nth-child(6) {
+        font-size: 113px;
+    }
+    #container span:nth-child(7) {
+        font-size: 96px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+      <span>Line 1, Line 1, Line 1</span>
+      <span>Line 2, Line 2, Line 2</span>
+      <span>Line 3, Line 3, Line 3</span>
+      <span>Line 4, Line 4, Line 4</span>
+      <span>Line 5, Line 5, Line 5</span>
+      <span>Line 6, Line 6, Line 6</span>
+      <span>Line 7, Line 7, Line 7</span>
+  </div>
+</body>
+</html>
