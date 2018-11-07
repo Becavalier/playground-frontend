@@ -1,0 +1,37 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /*
+        font:
+
+        <font-weight>
+        <font-style>
+        <font-variant>
+
+        <font-size>/<line-height>
+        <font-family>
+    */
+    #container p:nth-child(1) {
+        font: italic normal normal 20px/1 monospace;
+    }
+
+    #container p:nth-child(2) {
+        font: italic bold small-caps 20px/1.5 '微软雅黑', sans-serif;
+    }
+
+    #container p:nth-child(3) {
+        /* use system font on "caption" */
+        font: caption;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>There are some words here.</p>
+    <p>There are some words here.</p>
+    <p>There are some words here.</p>
+  </div>
+</body>
+</html>

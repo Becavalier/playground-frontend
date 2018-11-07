@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    /*
+        Generally:
+
+        normal: 400;
+        bold： 700;
+
+        OpenType Font: has 9 font weight level;
+    */
+    #container p:nth-child(1) {
+        font-weight: normal;
+    }
+
+    #container p:nth-child(2) {
+        font-weight: 400;
+    }
+
+    #container p:nth-child(3) {
+        font-weight: bold;
+    }
+
+    #container p:nth-child(4) {
+        font-weight: 700;
+    }
+
+    #container div {
+        font-weight: 100;
+    }
+
+    #container div div {
+        font-weight: bolder; /* normal: 400 */
+    }
+
+    #container div div div {
+        font-weight: bolder; /* bold: 700 */
+    }
+
+    #container div div div div {
+        font-weight: bolder; /* normal: 800 */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>There are some words here.</p>
+    <p>There are some words here.</p>
+    <p>There are some words here.</p>
+    <p>There are some words here.</p>
+    <div>
+        Apple
+        <div>
+            Apple
+            <div>
+                Apple
+                <div>Apple</div>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
