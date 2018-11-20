@@ -1,0 +1,22 @@
+<html>
+<head>
+  <meta http-equiv="Content-Language" content="zh-cn">
+  <style>
+    #container p {
+        /* the same as "text-align: right;" */
+        direction: rtl;
+    }
+    #container span {
+        direction: rtl;
+        unicode-bidi: bidi-override;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <p>Line 1, Line 1</p>
+    <span>Words, Words, Words</span>
+  </div>
+</body>
+</html>
