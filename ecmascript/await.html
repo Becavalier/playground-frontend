@@ -1,0 +1,26 @@
+<script>
+    let p = Promise.resolve(1);
+    (async () => {
+        await p;
+        console.log('after: await');
+    })();
+    p.then(() => {
+        console.log('tick: a');
+    }).then(() => {
+        console.log('tick: b');
+    });
+
+    (async () => {
+        let p = new Promise((resolve, reject) => {
+            console.log('holding ...');
+            setTimeout(() => {
+                resolve(1);
+            }, 3000);
+        });
+        await p;
+        console.log('end with "await"');
+        p.then(() => {
+            console.log('end in "then"');
+        });
+    })();
+</script>
