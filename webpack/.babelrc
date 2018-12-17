@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    [
+      // A plugin that enables the re-use of Babel's injected helper code to save on codesize.
+      "@babel/plugin-transform-runtime",
+      // "@babel/plugin-syntax-dynamic-import"
+    ]
+  ],
+  "presets": ["@babel/env"]
+}
